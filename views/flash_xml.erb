@@ -1,0 +1,58 @@
+<adResponse networkId="42015" version="1">
+	<rendererManifest version="1">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;adRenderers version=&apos;1&apos;&gt;&lt;adRenderer adUnit=&apos;video,&apos; contentType=&apos;application/f4m+xml,&apos; creativeApi=&apos;None,&apos; name=&apos;g_as3_f4m&apos; slotType=&apos;preroll,midroll,postroll,&apos; url=&apos;http://adm.fwmrm.net/p/3pqa_flash/F4MRenderer.swf&apos;/&gt;&lt;adRenderer adUnit=&apos;video,&apos; contentType=&apos;video/x-flv,video/flv-spark,video/flv-vp6,video/flv-h264,video/mp4-h264,video/quicktime-h264,video/f4v-h264,video/mp4,video/m4v,video/mp4-mpeg4,video/mp4-mpeg4_simple,video/m4v-h264_less_eq_level_3_baseline-640-480-less_eq_1500_kbps-aaclc,video/mp4-h264_less_eq_level_3_baseline-640-480-less_eq_1500_kbps-aaclc,video/mov-h264_less_eq_level_3_baseline-640-480-less_eq_1500_kbps-aaclc,video/m4v-h264_less_level_1.3_baseline-320-240-less_eq_768_kbps-aaclc,video/mp4-h264_less_level_1.3_baseline-320-240-less_eq_768_kbps-aaclc,video/mov-h264_less_level_1.3_baseline-320-240-less_eq_768_kbps-aaclc,video/m4v-mpeg4-640-480-less_eq_2500_kbps-aaclc,video/mp4-mpeg4-640-480-less_eq_2500_kbps-aaclc,video/mov-mpeg4-640-480-less_eq_2500_kbps-aaclc,video/mp4-h264_less_eq_level_3.1_main-heaac,video/mp4-h264_less_eq_level_3.1_high-heaac,video/mp4-h264_less_eq_level_4.1_main-heaac,video/mp4-h264_less_eq_level_4.1_high-heaac,video/mov-h263,video/MP2T-H.264,video/flv-vp6-rtmp,video/mp4-h264-rtmp,&apos; creativeApi=&apos;None,&apos; name=&apos;g_as3_video2&apos; slotType=&apos;preroll,midroll,postroll,&apos; url=&apos;http://adm.fwmrm.net/p/3pqa_flash/Video2AdRenderer.swf&apos;/&gt;&lt;adRenderer adUnit=&apos;still-image,fixed-size-interactive,text-ad,&apos; contentType=&apos;application/flash-swf-6,application/flash-swf-7,application/flash-swf-8,application/flash-swf-9,image/gif,image/jpeg,image/png,image/bmp,text/html,text/javascript,text/js_ref,text/html_doc_ref,text/html_lit_js_wc_nw,text/html_doc_lit_ns_wc_fw,application/flash-swf-9-as2,application/flash-swf-9-as3,application/flash-swf-10,application/flash-swf-10-as2,application/flash-swf-10-as3,&apos; creativeApi=&apos;None,&apos; name=&apos;g_as3_external_html&apos; slotType=&apos;display,&apos; url=&apos;http://adm.fwmrm.net/p/3pqa_flash/ExternalHTMLAdRenderer.swf&apos;/&gt;&lt;adRenderer adUnit=&apos;video,fixed-size-interactive,linear-animation,&apos; contentType=&apos;application/flash-swf-6,application/flash-swf-7,application/flash-swf-8,application/flash-swf-9,application/flash-swf-9-as2,application/flash-swf-9-as3,application/flash-swf-10,application/flash-swf-10-as2,application/flash-swf-10-as3,&apos; creativeApi=&apos;clickTag,youTube,fwoverlay,scripps,None,&apos; name=&apos;g_as3_uberlay&apos; slotType=&apos;preroll,midroll,postroll,overlay,pause_midroll,&apos; url=&apos;http://adm.fwmrm.net/p/3pqa_flash/UberlayAdRenderer.swf&apos;/&gt;&lt;adRenderer adUnit=&apos;video,still-image,fixed-size-interactive,generic-overlay,video-click-to-content,generic-overlay-click-to-content,slate,&apos; contentType=&apos;external/vast,external/vast-2,&apos; creativeApi=&apos;clickTag,VPAID,youTube,fwoverlay,scripps,MRAID-1.0,None,&apos; name=&apos;g_as3_vast&apos; slotType=&apos;preroll,midroll,postroll,overlay,display,pause_midroll,&apos; url=&apos;http://adm.fwmrm.net/p/3pqa_flash/VastTranslator.swf&apos;/&gt;&lt;adRenderer adUnit=&apos;video,fixed-size-interactive,generic-overlay,video-click-to-content,&apos; contentType=&apos;application/flash-swf-7,application/flash-swf-8,application/flash-swf-9,application/flash-swf-9-as3,application/flash-swf-10,application/flash-swf-10-as3,&apos; creativeApi=&apos;VPAID,&apos; name=&apos;g_as3_vpaid&apos; slotType=&apos;preroll,midroll,postroll,overlay,pause_midroll,&apos; url=&apos;http://adm.fwmrm.net/p/3pqa_flash/VPAIDAdRenderer.swf&apos;/&gt;&lt;/adRenderers&gt;</rendererManifest>
+	<visitor />
+	<ads>
+		<ad adId="1144760" adUnit="13271">
+			<creatives>
+			<creative adUnit="<%=@config["baseUnit"]%>" baseUnit="<%=@config["baseUnit"]%>" creativeId="466430" duration="<%=@config["duration"]%>">
+					<creativeRenditions>
+						<creativeRendition creativeApi="<%=@config["creativeApi"]%>" creativeRenditionId="646291" preference="0">
+						<asset bytes="519046" contentType="<%=@config["contentType"]%>" id="638155" mimeType="video/whatever" name="whatever" <%= @config["url"] ? "url=\"#{@config["url"]}\"" : ""%>>
+						<% if @config["content"] %>
+							<content>
+							<![CDATA[<%=@config["content"]%>]]>
+							</content>
+						<% end %>
+						</asset>
+						</creativeRendition>
+					</creativeRenditions>
+				</creative>
+			</creatives>
+		</ad>
+	</ads>
+	<siteSection customId="default">
+		<videoPlayer>
+			<videoAsset customId="all_temporal">
+				<adSlots>
+				<% if @config["slotType"] =~ /roll|overlay/ %>
+					<temporalAdSlot adUnit="whatever" compatibleDimensions="1440,900" customId="slot1" width="900" height="450" source="generated" timePosition="<%=@config["timePosition"]%>" timePositionClass="<%=@config["slotType"]%>">
+						<selectedAds>
+							<adReference adId="1144760" creativeId="466430" creativeRenditionId="646291" replicaId="0">
+								<eventCallbacks>
+									<eventCallback type="GENERIC" url="http://g1.v.fwmrm.net/ad/l/1?s=a121&amp;n=42015&amp;t=1363321816127718004&amp;adid=1144760&amp;reid=646291&amp;arid=0&amp;iw=&amp;uxnw=&amp;uxss=&amp;uxct=" />
+									<eventCallback name="defaultImpression" type="IMPRESSION" url="http://g1.v.fwmrm.net/ad/l/1?s=a121&amp;n=42015&amp;t=1363321816127718004&amp;adid=1144760&amp;reid=646291&amp;arid=0&amp;auid=&amp;cn=defaultImpression&amp;et=i&amp;_cc=1144760,646291,,,1363321816,1&amp;tpos=0&amp;iw=&amp;uxnw=&amp;uxss=&amp;uxct=&amp;init=1&amp;cr=" />
+									<eventCallback name="defaultClick" type="CLICK" url="http://g1.v.fwmrm.net/ad/l/1?s=a121&amp;n=42015&amp;t=1363321816127718004&amp;adid=1144760&amp;reid=646291&amp;arid=0&amp;auid=&amp;cn=defaultClick&amp;et=c&amp;_cc=&amp;tpos=0&amp;cr=" />
+								</eventCallbacks>
+							</adReference>
+						</selectedAds>
+						<eventCallbacks>
+							<eventCallback name="slotImpression" type="IMPRESSION" url="http://g1.v.fwmrm.net/ad/l/1?s=a121&amp;n=42015&amp;t=1363321816127718004&amp;cn=slotImpression&amp;et=i&amp;tpos=0&amp;init=1&amp;slid=0" />
+							<eventCallback name="slotEnd" type="IMPRESSION" url="http://g1.v.fwmrm.net/ad/l/1?s=a121&amp;n=42015&amp;t=1363321816127718004&amp;cn=slotEnd&amp;et=i&amp;tpos=0&amp;init=1&amp;slid=0" />
+						</eventCallbacks>
+					</temporalAdSlot>
+				<% end %>
+				</adSlots>
+				<eventCallbacks>
+					<eventCallback name="videoView" type="IMPRESSION" url="http://g1.v.fwmrm.net/ad/l/1?s=a121&amp;n=42015&amp;t=1363321816127718004&amp;cn=videoView&amp;et=i&amp;uxnw=&amp;uxss=&amp;uxct=" />
+				</eventCallbacks>
+			</videoAsset>
+			<adSlots>
+				<adSlot customId="3" height="250" width="300" />
+				<adSlot customId="1" height="90" width="728" />
+			</adSlots>
+		</videoPlayer>
+	</siteSection>
+	<eventCallbacks>
+		<eventCallback type="GENERIC" url="http://g1.v.fwmrm.net/ad/l/1?s=a121&amp;n=42015&amp;t=1363321816127718004" />
+	</eventCallbacks>
+</adResponse>
