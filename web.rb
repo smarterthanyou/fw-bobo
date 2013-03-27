@@ -18,7 +18,8 @@ def flash_xml
 		"duration" => 10,
 		"contentType" => "video/mp4",
 		"creativeApi" => "None",
-		"baseUnit" => "video"}.merge(@config)
+		"baseUnit" => "video",
+		"wrapperType" => nil}.merge(@config)
 	erb :flash_xml, :format => :xml
 end
 

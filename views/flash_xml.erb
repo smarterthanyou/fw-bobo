@@ -6,8 +6,12 @@
 			<creatives>
 			<creative adUnit="<%=@config["baseUnit"]%>" baseUnit="<%=@config["baseUnit"]%>" creativeId="466430" duration="<%=@config["duration"]%>">
 					<creativeRenditions>
-						<creativeRendition creativeApi="<%=@config["creativeApi"]%>" creativeRenditionId="646291" preference="0">
-						<asset bytes="519046" contentType="<%=@config["contentType"]%>" id="638155" mimeType="video/whatever" name="whatever" <%= @config["url"] ? "url=\"#{@config["url"]}\"" : ""%>>
+					<creativeRendition creativeApi="<%=@config["creativeApi"]%>" creativeRenditionId="646291" preference="0"
+					<% if @config["wrapperType"] %>
+						wrapperType=<%=@config["wrapperType"].encode(:xml => :attr)%>
+						wrapperUrl=<%=@config["url"].encode(:xml => :attr)%>
+					<% end %>>
+						<asset bytes="519046" contentType="<%=@config["contentType"]%>" id="638155" mimeType="video/whatever" name="whatever" <%= @config["url"] ? "url=#{@config["url"].encode(:xml => :attr)}" : ""%>>
 						<% if @config["content"] %>
 							<content>
 							<![CDATA[<%=@config["content"]%>]]>
