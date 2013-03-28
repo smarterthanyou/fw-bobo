@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'curb'
 require 'json'
+require 'CGI'
 
 enable :logging
 use Rack::CommonLogger
@@ -23,10 +24,19 @@ def flash_xml
 	erb :flash_xml, :format => :xml
 end
 
-get_or_post '/json/*' do 
+get_or_post '/json/:encodedJSON' do 
+	@config = JSON.parse(CGI.unescape(params[:encodedJSON]))
+  flash_xml
+end
+
+get_or_post '/url/*' do 
   url = params[:splat][0]
+	if url =~ /%3A/
+		url = CGI.unescape(url) 
+	else
+		url.sub!(/http(s)?:\//, '\0/')
+	end
   url += "?dl=1" if url =~ /dropbox.com/
-  url.sub!(/http(s)?:\//, '\0/')
   logger.info url
 	http = Curl.get(url) do |curl|
     curl.follow_location = true
